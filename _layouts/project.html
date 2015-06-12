@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="project">
+	<header class="project-header">
+		<h1 class="project-title">{{ page.title }}</h1>    
+		<h2 class="project-subtitle">{{ page.full-name }}</h2>
+	</header>
+
+	<article class="project-content">
+		<p><em>Period:</em> {{ page.date }}</p>
+		<p><em>Funded by:</em> {{ page.funded }}</p>		
+		<p><em>Code:</em> {{ page.code }}</p>
+		<p><em>Coordinated by:</em> {{ page.coordinator }}</p>
+		<h3>Abstract</h3>
+		<p>{{ content }}</p>		
+	</article>
+
+</div>
