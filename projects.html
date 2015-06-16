@@ -3,10 +3,11 @@ layout: page
 title: Projects
 ---
 
-  {% for project in site.projects %}
-    <li>      
-      <a href="{{ project.url }}">{{ project.title }}</a>
-      <p>{{ project.full-name }}</p>
-      <p>{{ project.date }}</p>
-    </li>
-  {% endfor %}
+{% assign sorted_projects = (site.projects | sort: 'date' | reverse) %}
+{% for project in sorted_projects %}
+	<li>      
+		<a href="{{ project.url }}">{{ project.title }}</a>
+		<p>{{ project.full-name }}</p>
+		<p>{{ project.date }}</p>
+	</li>
+{% endfor %}
