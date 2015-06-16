@@ -1,0 +1,12 @@
+---
+layout: page
+title: Papers
+---
+
+{% assign sorted_papers = (site.papers | sort: 'date' | reverse) %}
+{% for paper in sorted_papers %}
+	<li>
+		<a href="{{ paper.url }}">{{ paper.title }}</a>
+		<p>{{ paper.publication}} -- {{ paper.date }}</p>
+	</li>
+{% endfor %}

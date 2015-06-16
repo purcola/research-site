@@ -15,3 +15,5 @@ permalink: pretty
 collections:
   projects:
     output: true
+  papers:
+    output: true
