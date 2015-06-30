@@ -9,7 +9,7 @@ title: Papers
 		<ul>
 			{% for paper in year.items %}
 			<li>
-				<a href="{{ paper.url }}">{{ paper.title }}</a>
+				<a href="{{ site.baseurl }}{{ paper.url }}">{{ paper.title }}</a>
 				<p>{{ paper.publication}}</p>
 			</li>
 			{% endfor %}

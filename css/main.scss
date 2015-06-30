@@ -13,9 +13,14 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+$summer: #ff8000;
+$winter: #1a7ae2;
+$spring: #00994c;
+$fall: #990000;
+
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #1a7ae2;
+$brand-color:      $winter;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
